@@ -18,7 +18,7 @@ spec:
           image: nginx:{{ .Values.nginxVersion | default "1.25-alpine" }}
           ports:
           - containerPort: 80
-              name: http
+            name: http
           resources:
             {{ toYaml .Values.resources }}
           volumeMounts:
